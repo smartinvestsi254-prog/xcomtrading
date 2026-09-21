@@ -56,17 +56,4 @@ function LeftSection({
 }
 
 export default LeftSection;
-  >
-              <img src="media/images/googlePlayBadge.svg"></img>
-            </a>
-            <a href={appStore} className="text-decoration-none">
-              <img src="media/images/appStoreBadge.svg"></img>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default LeftSection;
+    
