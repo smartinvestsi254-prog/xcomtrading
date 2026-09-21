@@ -7,8 +7,8 @@ function Stats() {
           <h1 className="fs-2 mb-5">Trust with confidence</h1>
           <h2 className="fs-4">Customer-first always</h2>
           <p className="text-muted">
-            That's why 1.3+ crore customers trust Zerodha with Rs. 3.5+ lakh
-            crores<br></br> worth fo equity investments.
+            That's why 1.3+ crore customers trust Xcomtrading with Rs. 3.5+ lakh
+            crores<br></br> worth for equity investments.
           </p>
           <h2 className="fs-4">No spam or gimmicks</h2>
           <p className="text-muted">
@@ -37,10 +37,10 @@ function Stats() {
             style={{ width: "100%" }}
           />
           <div className="text-center">
-            <a href="#" className="mx-5 text-decoration-none">
+            <a href="/pricing" className="mx-5 text-decoration-none">
               Explore our products  <i class="fa-solid fa-arrow-right-long"></i>
             </a>
-            <a href="#" className="text-decoration-none">
+            <a href="/products" className="text-decoration-none">
               Try Kite demo  <i class="fa-solid fa-arrow-right-long"></i>
             </a>
           </div>
