@@ -55,7 +55,7 @@ function Footer() {
               <br />
               <a href="/Support portal">Link</a>
               <br />
-              <a href="/Z-Connect blog">Link</a>
+              <a href="/https://smartinvestsi.netlify.app" target="_blank" rel="noopener noreferrer">Instagram</a>
               <br />
               <a href="List of charges">Link</a>
               <br />
