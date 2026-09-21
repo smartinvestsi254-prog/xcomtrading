@@ -30,47 +30,47 @@ function Footer() {
             {/* how to remove the underline from these all links below */}
             <p>Company</p>
             <div className="links-column">
-              <a href="">About</a>
+              <a href="/About">Link</a>
               <br></br>
-              <a href="">Products</a>
+              <a href="/Products">Link</a>
               <br></br>
-              <a href="">Pricing</a>
+              <a href="/Pricing">Link</a>
               <br></br>
-              <a href="">Referral programme</a>
+              <a href="/Referral programme">Link</a>
               <br></br>
-              <a href="">Carrers</a>
+              <a href="/Careers">Link</a>
               <br></br>
-              <a href="">Zerodha.tech</a>
+              <a href="/Zerodha.tech">Link</a>
               <br></br>
-              <a href="">Press & media</a>
+              <a href="/Press & media">Link</a>
               <br></br>
-              <a href="">Zerodha cares (CSR)</a>
+              <a href="Zerodha cares (CSR)">Link</a>
               <br></br>
             </div>
           </div>
           <div className="col-3">
             <p>Support</p>
             <div className="links-column">
-              <a href="">Contact</a>
+              <a href="/Contact">Link</a>
               <br />
-              <a href="">Support portal</a>
+              <a href="/Support portal">Link</a>
               <br />
-              <a href="">Z-Connect blog</a>
+              <a href="/Z-Connect blog">Link</a>
               <br />
-              <a href="">List of charges</a>
+              <a href="List of charges">Link</a>
               <br />
-              <a href="">Downloads & resources</a>
+              <a href="/Downloads & resources">Link</a>
               <br />
             </div>
           </div>
           <div className="col-3">
             <p>Account</p>
             <div className="links-column">
-              <a href="">Open an account</a>
+              <a href="/Open an account">Link</a>
               <br />
-              <a href="">Fund transfer</a>
+              <a href="/Fund transfer">Link</a>
               <br />
-              <a href="">60 day challenge</a>
+              <a href="/60 day challenge">Link</a>
               <br />
             </div>
           </div>
