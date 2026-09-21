@@ -7,6 +7,36 @@ const { createClient } = require('@supabase/supabase-js');
 const app = express();
 const PORT = process.env.PORT || 3002;
 
+// Dynamic CORS configuration for local and production Vercel apps
+const allowedOrigins = [
+    'http://localhost:3000',                  // Local Frontend / Dashboard
+    'http://localhost:3001',                  // Secondary local dev port
+    'https://xcomtrading-frontend.vercel.app',       // Update with your actual frontend Vercel URL
+    'https://xcomtrading-dashboard.vercel.app'        // Update with your actual dashboard Vercel URL
+];
+
+const corsOptions = {
+    origin: function (origin, callback) {
+        // Allow requests with no origin (e.g., Mobile apps, Postman, server-to-server)
+        if (!origin) return callback(null, true);
+
+        if (allowedOrigins.indexOf(origin) !== -1) {
+            callback(null, true);
+        } else {
+            callback(new Error('Blocked by CORS policy'));
+        }
+    },
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true
+};
+
+// Enable CORS middleware (must be placed before routes)
+app.use(cors(corsOptions));
+
+// Enable JSON parser middleware
+app.use(express.json());
+
 // Initialize Supabase Client
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_ANON_KEY;
@@ -16,9 +46,6 @@ if (!supabaseUrl || !supabaseKey) {
 }
 
 const supabase = createClient(supabaseUrl, supabaseKey);
-
-app.use(express.json());
-app.use(cors());
 
 // Fetch all holdings
 app.get('/allHoldings', async (req, res) => {
