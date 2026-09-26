@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 function Footer() {
+  // Initialize PayPal Hosted Button once component mounts
+  useEffect(() => {
+    if (window.paypal && window.paypal.HostedButtons) {
+      window.paypal.HostedButtons({
+        hostedButtonId: "PLDUTTW4EA9B6",
+      }).render("#paypal-container-PLDUTTW4EA9B6");
+    }
+  }, []);
+
   return (
     <footer>
-      <div className="container- bg-light mt-5 p-5  border-top ">
+      <div className="container- bg-light mt-5 p-5 border-top">
         <div className="row">
           <div className="col-3">
             <div className="mb-5">
@@ -10,44 +20,45 @@ function Footer() {
                 src="media/images/logo.svg"
                 style={{ width: "50%" }}
                 alt="logo"
-              ></img>
+              />
             </div>
             <div>
-              <p>&copy; 2010 - 2025, Not XcomTrading Broking Ltd.</p>
+              <p>&copy; 2010 - 2026, Not XcomTrading Broking Ltd.</p>
               <p>All Rights Reserved</p>
             </div>
             <div>
               <h4 className="text-muted">
-                <i class="fa-brands fa-twitter mx-2"></i>
-                <i class="fa-brands fa-square-facebook mx-2"></i>
-                <i class="fa-brands fa-instagram mx-2"></i>
-                <i class="fa-brands fa-linkedin-in mx-2"></i>
-                <i class="fa-brands fa-telegram mx-2"></i>
+                <i className="fa-brands fa-twitter mx-2"></i>
+                <i className="fa-brands fa-square-facebook mx-2"></i>
+                <i className="fa-brands fa-instagram mx-2"></i>
+                <i className="fa-brands fa-linkedin-in mx-2"></i>
+                <i className="fa-brands fa-telegram mx-2"></i>
               </h4>
             </div>
           </div>
+
           <div className="col-3">
-            {/* how to remove the underline from these all links below */}
             <p>Company</p>
             <div className="links-column">
               <a href="/About">Link</a>
-              <br></br>
+              <br />
               <a href="/Products">Link</a>
-              <br></br>
+              <br />
               <a href="/Pricing">Link</a>
-              <br></br>
+              <br />
               <a href="/Referral programme">Link</a>
-              <br></br>
+              <br />
               <a href="/Careers">Link</a>
-              <br></br>
+              <br />
               <a href="/Zerodha.tech">Link</a>
-              <br></br>
+              <br />
               <a href="/Press & media">Link</a>
-              <br></br>
+              <br />
               <a href="XcomTrading cares (CSR)">Link</a>
-              <br></br>
+              <br />
             </div>
           </div>
+
           <div className="col-3">
             <p>Support</p>
             <div className="links-column">
@@ -55,7 +66,13 @@ function Footer() {
               <br />
               <a href="/Support portal">Link</a>
               <br />
-              <a href="/https://smartinvestsi.netlify.app" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a
+                href="https://smartinvestsi.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
               <br />
               <a href="List of charges">Link</a>
               <br />
@@ -63,6 +80,7 @@ function Footer() {
               <br />
             </div>
           </div>
+
           <div className="col-3">
             <p>Account</p>
             <div className="links-column">
@@ -75,9 +93,19 @@ function Footer() {
             </div>
           </div>
         </div>
+
+        {/* PayPal Donation Button Section */}
+        <div className="row mt-4 text-center">
+          <div className="col-12">
+            <p className="fw-bold mb-2">Support Us</p>
+            <div id="paypal-container-PLDUTTW4EA9B6"></div>
+          </div>
+        </div>
+
+        {/* Legal Disclaimers & Compliance Text */}
         <div className="row mt-5 text-small text-muted">
           <p>
-            XcomTrading Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
+            XcomTrading Broking Ltd.: Member of NSE, BSE & MCX – SEBI Registration
             no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha
             Broking Ltd. – SEBI Registration no.: IN-DP-431-2019 Commodity
             Trading through XcomTrading Commodities Pvt. Ltd. MCX: 46025; SEBI
@@ -117,10 +145,18 @@ function Footer() {
             claiming to be part of XcomTrading and offering such services, please
             create a ticket here.
           </p>
+          
+          {/* Educational Disclaimer */}
+          <div className="p-3 mt-3 border border-warning rounded bg-light text-dark">
+            <p className="mb-0 fw-bold">Educational Disclaimer:</p>
+            <p className="mb-0">
+              This website and its simulation tools are strictly for educational and informational purposes only. Features on this site may simulate or involve live transactions. The owner and operators of this website assume no responsibility or liability for any illegal activities, financial losses, regulatory non-compliance, or inconveniences experienced globally by users interacting with this platform or its integrations.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
   );
 }
 
-export default Footer;
+export default Footer;                
