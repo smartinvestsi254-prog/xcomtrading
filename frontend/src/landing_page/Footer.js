@@ -13,7 +13,7 @@ function Footer() {
               ></img>
             </div>
             <div>
-              <p>&copy; 2010 - 2025, Not Zerodha Broking Ltd.</p>
+              <p>&copy; 2010 - 2025, Not XcomTrading Broking Ltd.</p>
               <p>All Rights Reserved</p>
             </div>
             <div>
@@ -44,7 +44,7 @@ function Footer() {
               <br></br>
               <a href="/Press & media">Link</a>
               <br></br>
-              <a href="Zerodha cares (CSR)">Link</a>
+              <a href="XcomTrading cares (CSR)">Link</a>
               <br></br>
             </div>
           </div>
@@ -85,7 +85,7 @@ function Footer() {
             Ltd., #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public
             School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India.
             For any complaints pertaining to securities broking please write to
-            complaints@zerodha.com, for DP related to dp@zerodha.com. Please
+            complaints@xcomtrading.com, for DP related to dp@xcomtrading.com. Please
             ensure you carefully read the Risk Disclosure Document as prescribed
             by SEBI | ICF
           </p>
@@ -114,7 +114,7 @@ function Footer() {
             of allotment. In case of non allotment the funds will remain in your
             bank account. As a business we don't give stock tips, and have not
             authorized anyone to trade on behalf of others. If you find anyone
-            claiming to be part of Zerodha and offering such services, please
+            claiming to be part of XcomTrading and offering such services, please
             create a ticket here.
           </p>
         </div>
