@@ -77,11 +77,11 @@ function Footer() {
         </div>
         <div className="row mt-5 text-small text-muted">
           <p>
-            Zerodha Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
+            XcomTrading Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
             no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha
             Broking Ltd. – SEBI Registration no.: IN-DP-431-2019 Commodity
-            Trading through Zerodha Commodities Pvt. Ltd. MCX: 46025; SEBI
-            Registration no.: INZ000038238 Registered Address: Zerodha Broking
+            Trading through XcomTrading Commodities Pvt. Ltd. MCX: 46025; SEBI
+            Registration no.: INZ000038238 Registered Address: XcomTrading Broking
             Ltd., #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public
             School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India.
             For any complaints pertaining to securities broking please write to
